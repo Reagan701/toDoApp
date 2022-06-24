@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>To Do App</title>
+</head>
+<body>
+
+    <div id="Background" class="container d-flex flex-column justify-content-center vh-100 w-50">
+        <div class="row">
+            <h1 class="display-1 text-white text-center"> To-Do List </h1>
+        </div>
+        <div id="BG" class="p-5">
+            <div class="row text-center">
+                <h2 id="sortingClass" class="mb-5"></h2>
+            </div>
+            <div class="row w-75 mx-auto text-center align-items-center">
+                <div class="pb-3 col-md-3">
+                    <div id="SortDropDown" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" style="background-color: rgb(204, 0, 204); border-color: rgb(204, 0, 204);"
+                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort By
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a onclick="sortByDesc()" class="dropdown-item">Descending</a>
+                            </li>
+                            <li>
+                                <a onclick="sortByAsc()" class="dropdown-item">Ascending</a>
+                            </li>
+                            <li>
+                                <a onclick="sortByDate()" class="dropdown-item">By Date</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pb-3 col-md-2">
+                    <button type="submit" onclick="clearAll()" style="background-color: rgb(204, 0, 0); border-color: rgb(204, 0, 0);" class="btn btn-primary"><i id="AddIcon" class="bi bi-trash3-fill"></i></button>
+                </div>
+                <div class="pb-3 col-md-4">
+                    <input id="newItemTitle" placeholder="Enter your item" required type="text">
+                </div>
+                <div class="pb-3 col-md-2">
+                    <button type="submit" onclick="addNewItem()" class="btn btn-primary"><i id="AddIcon" class="bi bi-plus-square-fill"></i></button>
+                </div>
+                <div class="py-2" id="items">
+                    
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

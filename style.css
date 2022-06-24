@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(300deg, blue 0%,purple,red);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#SortDropDown{
+    cursor: pointer;
+}
+
+#BG{
+    background-color: white;
+    box-shadow: 0px 20px 50px black;
+}
+
+#LabelStyle{
+    word-break: break-all;
+}
+
+#newItemTitle{
+    padding-left: 3px;
+}
+
+#DateStyle{
+    font-style: italic;
+}
+
+#items{
+    border-top: 1px solid black;
+}
+i{
+    color:black;
+    width: 15% !important;
+}
+#AddIcon{
+    color: white;
+}
+
+i:hover{
+    cursor:pointer;
+    color:red;
+}
